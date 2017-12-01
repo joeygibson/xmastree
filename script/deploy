@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "$0 <host>"
+  exit 1
+fi
+
+scp *.py pi@$1.local:
+scp systemd/lights.service pi@$1.local:
+
