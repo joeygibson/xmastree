@@ -1,0 +1,12 @@
+[Unit]
+Description=Christmas Tree Lights
+Wants=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/lights.pid
+ExecStart=/usr/bin/python3 /home/pi/lights.py
+ExecStop=
+
+[Install]
+WantedBy=multi-user.target
