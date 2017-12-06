@@ -6,5 +6,5 @@ if [ -z "$1" ]; then
 fi
 
 scp *.py pi@$1.local:
-scp systemd/lights.service pi@$1.local:
+scp systemd/*.service pi@$1.local:
 
