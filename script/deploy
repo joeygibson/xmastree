@@ -5,6 +5,6 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-scp *.py pi@$1.local:
-scp systemd/*.service pi@$1.local:
+scp *.py pi@$1:
+scp systemd/*.service pi@$1:
 
